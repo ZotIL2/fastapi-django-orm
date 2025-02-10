@@ -1,7 +1,7 @@
 [project]
-name = "fastapi-django-orm"
+name = "yumgo_python_template"
 version = "0.1.0"
-description = "Add your description here"
+description = "Yumgo python template"
 readme = "README.md"
 # Can be lowered, if necessary
 requires-python = ">=3.13"
@@ -15,13 +15,18 @@ dependencies = [
     "pydantic-settings>=2.7.1",
     "pytz>=2025.1",
     "toml>=0.10.2",
+    "request-sender",
 ]
 
 [tool.uv]
 dev-dependencies = [
-    "ipython>=8.32.0",
-    "ruff>=0.9.5",
+    "ipython>=8.29.0",
+    "pre-commit>=4.0.1",
+    "ruff>=0.9.4",
 ]
+
+[tool.uv.sources]
+request-sender = { git = "https://github.com/k1core-ltd/request-sender", tag = "0.3.0" }
 
 [tool.ruff]
 line-length = 100

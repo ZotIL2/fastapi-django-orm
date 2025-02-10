@@ -1,8 +1,8 @@
 {
-	"name": "Backend Service",
+	"name": "Yumgo Python Template",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "backend",
-	"workspaceFolder": "/workspace",
+	"workspaceFolder": "/app",
 	"shutdownAction": "stopCompose",
 	"customizations": {
 		"vscode": {
@@ -15,7 +15,12 @@
 				"waderyan.gitblame",
 				"phil294.git-log--graph",
 				"esbenp.prettier-vscode"
-			]
+			],
+			"settings": {
+				"python.defaultInterpreterPath": "/app/.venv/bin/python3",
+				"editor.defaultFormatter": "charliermarsh.ruff",
+				}
+			}
 		}
 	}
 }
